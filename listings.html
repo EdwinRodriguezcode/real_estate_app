@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            
+                StarWars Realtors
+            
+            
+                
+                    - Listings
+                
+            
+        </title>
+        <meta name="description" content="The best place to find a house." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="Starwars Realtors, Were You Make Your Dream Reality" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="The best customer service on Earth." />
+        <meta property="og:site_name" content="starwarsRealtors" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Starwars Realtors | Starwars">
+        <meta name="twitter:description" content="The best customer service on Earth.">
+      
+          <!-- this is for geolocation -->
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>        
+        <link rel="stylesheet" href="/static/css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="/frontend/js/script.js"></script>
+
+        
+    </head>
+
+    <body  onload="initialize()">
+        
+
+        
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/static/images/logo.png" alt="starwars_Realtors">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        
+          
+            <li class="nav-item active">
+              <a class="nav-link" href="#" >
+                Home Page
+              </a>
+            </li>
+          
+            <li class="nav-item active">
+              <a class="nav-link" href="/aboutUs.html" >
+            About Us
+              </a>
+            </li>
+          
+            <li class="nav-item active">
+              <a class="nav-link" href="/home_Page.html" target="_blank">
+            Listings
+              </a>
+            </li>
+          <!-- search bar here -->
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+        
+
+  
+
+  <div class="jumbotron jumbotron-fluid text-light py-5 d-flex align-items-center cc-home-banner" style='background: linear-gradient(180.43deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.80) 100%), url(https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg);'>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-9">
+          <h1 class="display-3 cc-home-banner-title">Starwars Realtors</h1>
+            
+              <p class="lead">Your House $1,000,000,000 baby. We get that.</p>
+            
+
+            
+              <p class="mt-3">
+                <a href="/contact/" class="btn btn-light btn-lg">
+                  Contact Us
+                </a>
+              </p>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+        <main id="content" class="container my-4" role="main">
+          
+
+  
+    
+    
+      
+        <!-- Title Block -->
+<div class="row text-center cc-title-block">
+  <div class="col">
+    <h3 class="cc-title-title mb-0">
+      Your House is valuable. Let the professionals Sell it.
+    </h3>
+  </div>
+</div>
+<!-- End Title Block -->
+
+      
+        
+
+<!-- Cards Block -->
+<div class="row justify-content-center">
+  
+    <div class="col-md-6 d-flex align-items-stretch">
+      <div class="card mb-3 text-center">
+        <a href="/services/">
+          <picture>
+            
+            <img src="https://www.listingsmagic.com/photos/62558/229127/1754986045-229127p.jpg" class="card-img-top" alt="hello-i-m-nik-8yCmQODY2SY-unsplash.jpg">
+          </picture>
+        </a>
+        <div class="card-body py-3 px-3">
+          <a href="/aboutUs.html">
+            <h5 class="card-title">
+              Your Property is not a toy
+            </h5>
+            
+              <p class="card-text">Or maybe you&#39;re Jeff Bezos.. and rockets are your toys!</p>
+            
+          </a>
+
+          <p class="card-text">
+            <a href="/services/" class="btn btn-link d-inline">
+              About Us
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  <!-- this is the secound card for map -->
+    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+      <div class="card mb-3 text-center">
+        <a href="/contact/">
+          <picture>
+            
+            <img src="https://ddfcdn.realtor.ca/listings/TS637839022770600000/reb10/highres/4/E4283904_1.jpg">
+          </picture>
+        </a>
+        <div class="card-body py-3 px-3">
+          <a href="/contact/">
+            <h5 class="card-title">
+              Find Your Dream Home Here!!
+            </h5>
+            
+              <p class="card-text">Especially when you see photos like this one 🤤</p>
+            <!-- this is were the code goes -->
+<div>
+              <div id="map_canvas" style="width: 500px; height: 300px" />
+</div>
+           <!-- ======================================= -->
+          </a>Find Your Dream home Here!
+
+          <p class="card-text">
+            <a href="#" lass="btn btn-link d-inline">
+              Find Your Dream home Now!
+            
+
+
+
+
+
+
+              </div>
+           
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  
+</div>
+<!-- End Cards Block -->
+
+      
+        
+
+<!-- Image and Text Block -->
+<div class="my-4">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class='cc-iat cc-iat--left'>
+        <div class="cc-iat-image">
+          
+            <a href="#" class="d-block">
+          
+            <picture>
+              
+              <img src="/frontend/images/pexels-photo-2078774.jpeg" alt="spacex-MEW1f-yu2KI-unsplash.jpg" style='width: 100%; height: auto;'>
+            </picture>
+          
+            </a>
+          
+        </div>
+        <div class="cc-iat-image-content" style='background-image: url("https://ddfcdn.realtor.ca/listings/TS637839022770600000/reb10/highres/4/E4283904_1.jpg")'>
+          <h3 class="cc-iat-title">Dream Big</h3>
+          
+            <p class="cc-iat-text">
+              Probably the coolest thing ever!! We can programn this for you.
+            </p>
+          
+
+          
+            <a href="/aboutUs.html" class="btn btn-light btn-lg" style='padding-left: 3rem; padding-right: 3rem;'>
+              About Us
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Image and Text Block -->
+
+      
+        
+
+<!-- Image and Text Block -->
+<div class="my-4">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class='cc-iat cc-iat--right'>
+        <div class="cc-iat-image">
+          
+            <a href="/listings.html" class="d-block">
+          
+            <picture>
+              
+              <img src="/frontend/images/keysHands.jpg" alt="pablo-guerrero-pGXUwHZQ5eI-unsplash.jpg" style='width: 100%; height: auto;'>
+            </picture>
+          
+            </a>
+          
+        </div>
+        <div class="cc-iat-image-content" style='background-image: url("/frontend/images/pexels-photo-1769369.jpeg")'>
+          <h3 class="cc-iat-title">We&#39;ll clean your House</h3>
+          
+            <p class="cc-iat-text">
+              This image has nothing to do with cleaning. But it&#39;s kind of neat still.
+            </p>
+          
+
+          
+            <a href="/home_Page.html" class="btn btn-light btn-lg" style='padding-left: 3rem; padding-right: 3rem;'>
+              More Details
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Image and Text Block -->
+
+      
+        
+
+<!-- Image and Text Block -->
+<div class="my-4">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class='cc-iat cc-iat--left'>
+        <div class="cc-iat-image">
+          
+            <a href="/listings.html" class="d-block">
+          
+            <picture>
+              
+              <img src="/frontend/images/pexels-photo-2628393.jpeg" alt="spacex-OHOU-5UVIYQ-unsplash.jpg" style='width: 100%; height: auto;'>
+            </picture>
+          
+            </a>
+          
+        </div>
+        <div class="cc-iat-image-content" style='background-image: url("/frontend/images/pexels-photo-2078774.jpeg")'>
+          <h3 class="cc-iat-title">Houses are Great investments</h3>
+          
+            <p class="cc-iat-text">
+              If you think it's expensive now.. think about house prices! Luckily, we water our gas down to give you more bang for your buck.
+            </p>
+          
+
+          
+            <a href="/listings.html" class="btn btn-light btn-lg" style='padding-left: 3rem; padding-right: 3rem;'>
+              More Details
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Image and Text Block -->
+
+      
+        <!-- Call to Action Block -->
+<div class="my-md-4 my-2">
+  <div class="row text-center">
+    <div class="col">
+      <h3 class="cc-cta-title">We&#39;ve also partnered with Skynet to maintain humanoid robotics To Sell You a Dream House.</h3>
+      <a href="/contact/" class="btn btn-primary btn-lg" style='padding-left: 3rem; padding-right: 3rem;'>Contact Us</a>
+    </div>
+  </div>
+</div>
+<!-- End Call to Action Block -->
+
+      
+        <!-- Testimonial Block -->
+<div class="pt-4">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+      <h3 class="cc-testimonial-title mb-0">My Future is so bright that it blinded over 1,000 people when they saw my vision. Thanks tarwars Realtors!</h3>
+      <p class="cc-testimonial-attribution mb-0">
+        &mdash; Totally not Real 😉
+      </p>
+    </div>
+  </div>
+</div>
+<!-- End Testimonial Block -->
+
+      
+    
+  
+
+
+        </main>
+
+        
+
+
+
+  <section class="py-4 mt-lg-5 mt-0" style='background-color: #814EBF; background-image: url("/frontend/images/pexels-photo-2628393.jpeg");'>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 text-lg-left text-center">
+          <h2 class="h2 cc-contact-footer-h2">
+            We’ll take good care of your House Needs.
+          </h2>
+          <p class="cc-contact-footer-p mb-0">
+            We’ll treat your Pocket as if it’s our own. Our standards are higher than the ISS&#39;s altitude. We also enjoy driving your Car fast and hard before giving it back 😱
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-right text-center">
+          <a href="/contact.html" class="btn btn-light btn-lg mt-lg-0 mt-3">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="bg-dark py-4 text-light text-md-left text-center cc-footer" >
+  <div class="container">
+    <div class="row mx-lg-n3">
+      <div class="px-lg-3 col-lg-3 col-md-6 col-sm-12">
+        <div class="cc-footer-title">Links</div>
+        
+          
+            <a class="cc-footer-link-lg d-block" href="/listings.html" >
+              Services
+            </a>
+          
+            <a class="cc-footer-link-lg d-block" href="/aboutUs.html" >
+              Contact
+            </a>
+          
+            <a class="cc-footer-link-lg d-block" href="/home_Page.html" target="_blank">
+              Starwars Realtors
+            </a>
+          
+        
+      </div>
+        <div class="px-lg-2 col-lg-3 col-md-6 col-sm-12">
+          <div class="cc-footer-title">Contact Us</div>
+          <div class="rich-text"><p>Contact us anytime at<br/><a href="http://sample@samplemail.com>Edwin@totallyfakeemail.com</a></p><p>* All images from <a href="https://brainstorm.com">brainstorm.com</a><br/></p></div>
+        </div>
+        <div class="px-lg-4 col-lg-3 col-md-6 col-sm-12">
+          <div class="cc-footer-title">Hours</div>
+          <div class="rich-text"><p>Monday - Friday<br/>9am - 5pm</p></div>
+        </div>
+        <div class="px-lg-3 col-lg-3 col-md-6 col-sm-12">
+          
+
+            
+      
+        </div>       
+          <div class="cc-footer-copy">&copy; 2022 Ed</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+        
+        <script type="text/javascript" src="/frontend/js/script.js"></script>
+
+        
+            
+        
+    </body>
+</html>
